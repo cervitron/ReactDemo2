@@ -1,5 +1,17 @@
 name: Test Project
-on: [push, workflow_dispatch]
+on: 
+  pull_request: 
+    types: 
+      - edited
+      - opened
+  workflow_dispatch:    
+
+#on:
+#  pull_request: 
+#    types: [edited,closed]
+#  workflow_dispatch:  
+
+#on: [push, workflow_dispatch]
 jobs:
   test:
     runs-on: ubuntu-latest
