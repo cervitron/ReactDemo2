@@ -21,7 +21,7 @@ jobs:
       - name: install NodeJs
         uses: actions/setup-node@v3 
         with:
-          node-version: 18
+          node-version: 16
       - name: install dependencies
         run: npm ci
       - name: buid Project
